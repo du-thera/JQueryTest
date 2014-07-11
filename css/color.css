@@ -1,0 +1,6 @@
+body{
+	/*background:url("../imager/5.jpg") no-repeat 0px 0px ;
+	opacity:0.5; */  /*透明度*/
+	text-align: center;
+}
+#divcss5{margin:0 auto;border:1px solid #000;width:300px;height:100px} 

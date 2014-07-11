@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>ubuntu学习记录</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li> 1 :ubuntu装系统  没问题</li>
+            <li>2：常用软件安装  （有问题）</li>
+                <ul>
+                    <li> a: fcitx (小企鹅)</li>
+                        <ul>
+                            <li>$sudo apt-get install language-pack-zh-hans
+                                <p>//用管理员安装中文支持环境</p> </li>
+                            <li>$sudo apt-get install fcitx
+                                <p> //安装小企鹅</p></li>
+                            <li>$im-swich -s fcitx default
+                                <p>//把小企鹅输入法设置为默认输入法</p></li>
+                            <li>$im-switch -c
+                                <p>//以上操作没有用就直接用本行命令 会弹出选择框手动选择fcitx</p></li>
+                        </ul>
+                    <li> b:sublime</li>
+                    <ul>
+                        <li>首先下载sublime text 2
+                           <p> 网站:<a href="http://www.sublimetext.com/2">http://www.sublimetext.com/2</a></p>
+                        </li>
+                        <li>$sudo tar -jxvf Sublime\ Text\ 2.0.2.tar.bz2 -C/opt
+                        <p>//解压文件到(opt)自选可改</p>
+                        <p>bz用-jxvf 解压</p>
+                        <p>gz用-zxvf 解压</p>
+                        </li>
+                        <li>$sudo ln -s /opt/Sublime\ Text\ 2/sublime_text /usr/bin/subl
+                            <p>到opt/Sublime\ Text\ 2/sublime_text目录下执行以上命令</p>
+                            <p>如何到opt/Sublime\ Text\ 2/sublime_text目录下</p>
+                            <p> 1$ cd / <br />
+                                2$ ls  <br />
+                                3$ cd opt <br />
+                                4$ cd Sublime\ Text\ 2/ <br />
+                                5$ ls
+                            </p>
+                            <p>这行命令是在/usr/bin/目录下建立一个名为subl链接，这样后面可以比较方便的用命令行启动这个编辑器。其中subl这个名字是自行定义的，用户可以定义的更加简单方便。</p>
+                        </li>
+                    </ul>
+                    <li>c:git
+                        <p>$ apt-get install git-core</p></li>
+
+                    <li>d:chromium
+                        <p>$ sudo apt-get install chromium-browser</p></li>
+
+                </ul>
+        </ul>
+    </div>
+</body>
+</html>
+        

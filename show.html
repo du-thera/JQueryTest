@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title></title>
+</head>
+<body>
+ <SCRIPT type=text/javascript>
+	function show_hiddendiv(){
+	document.getElementById("hidden_div").style.display='block';
+	document.getElementById("_strHref").href='javascript:hidden_showdiv();';
+	document.getElementById("_strSpan").innerHTML="隐藏部分";
+}
+function hidden_showdiv(){
+document.getElementById("hidden_div").style.display='none';
+document.getElementById("_strHref").href='javascript:show_hiddendiv();';
+document.getElementById("_strSpan").innerHTML="显示全部";
+}
+</SCRIPT>
+
+想看更多？
+<span style="display: none" id="hidden_div">我就是更多！</span>
+...
+(
+<a id=_strHref href="javascript:show_hiddendiv();">
+<span id="_strSpan">显示全部
+
+</span>
+</a>)
+</body>
+</html>

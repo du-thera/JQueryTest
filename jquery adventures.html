@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>jquery adventures</title>
+
+<script type="text/javascript" src="./js/jquery-2.1.1.js"></script>
+	<script>
+		$(document).ready(function(){
+			// // 单击事件
+			// $("button.b").click(function(){
+			// 	// 点击变色
+			// 	$("p").css("color","red");
+			// 	// 点击隐藏
+			// 	$("p.a").hide(1000);
+			// });
+ 			// 双击事件
+			// $("button.c").dblclick(function(){
+			// 	$("p.a").css("color","aqua");
+			// 	//点击显示
+			// 	// $("p.a").show(1000);
+
+			// 	//显示被隐藏的元素，并隐藏已显示的元素
+			// 	 // $("p").toggle(1000);
+			// });
+			// // 鼠标悬停事件
+			// $("p.a").mouseover(function(){
+			// 	$("p.a").css("color","fuchsia");
+			// });
+			// //鼠标悬停离开事件
+			// $("p.a").mouseout(function(){
+			// 	$("p.a").css("color","#000");
+			// });
+
+		    //	隐藏/显示面板
+			// $("p.flip").click(function(){
+			// 	$("div.panel").css("display","block");
+			// 	$("div.panel").fadeToggle(100000);
+			// });
+
+			//淡入淡出
+			// $("#aa").mouseover(function(){
+			// 	//jQuery fadeIn() 用于淡入已隐藏的元素。
+			// 	$("div#a").fadeIn();
+			// 	$("div#b").fadeIn("slow");
+			// 	$("div#c").fadeIn(1000);    
+			// });
+
+			// $("#aa").mouseout(function(){
+			// 	//jQuery fadeOut() 方法用于淡出可见元素。
+				// 	$("div#a").fadeOut();
+				// 	$("div#b").fadeOut("slow");
+				// 	$("div#c").fadeOut(1000);
+			// });
+			// 	$("#aa").mouseout(function(){
+			// 	//jQuery fadeToggle() 方法可以在 fadeIn() 与 fadeOut() 方法之间进行切换。
+			// 	// 如果元素已淡出，则 fadeToggle() 会向元素添加淡入效果。
+			// 	// 如果元素已淡入，则 fadeToggle() 会向元素添加淡出效果。
+			// 		$("div#a").fadeToggle();
+			// 		$("div#b").fadeToggle("slow");
+			// 		$("div#c").fadeToggle(1000);
+			// });
+
+	  		// $("#aa").mouseout(function(){
+			// 	//jQuery fadeTo() 方法允许渐变为给定的不透明度（值介于 0 与 1 之间）。
+			// 		$("div#a").fadeTo("slow",0.15);
+			// 		$("div#b").fadeTo("slow",0.3);
+			// 		$("div#c").fadeTo("slow",0.7);
+			// });
+			//滑动
+			
+			$("#aa").mouseover(function(){
+				//jQuery slideDown() 方法用于向下滑动元素。
+				$("div#a").slideDown("slow");
+				$("div#b").slideDown("slow");
+				$("div#c").slideDown("slow");    
+			});
+
+			// $("#aa").mouseout(function(){
+			// 	//jQuery slideUp() 方法用于向上滑动元素。
+			// 	$("div#a").slideUp("slow");
+			// 	$("div#b").slideUp("slow");
+			// 	$("div#c").slideUp("slow");    
+			// });
+			$("#aa").mouseout(function(){
+				//jQuery slideToggle() 方法可以在 slideDown() 与 slideUp() 方法之间进行切换。
+				//如果元素向下滑动，则 slideToggle() 可向上滑动它们。
+				//如果元素向上滑动，则 slideToggle() 可向下滑动它们。
+				$("div#a").slideToggle("slow");
+				$("div#b").slideToggle("slow");
+				$("div#c").slideToggle("slow");    
+			});
+    
+		});
+
+	</script>
+
+</head>
+
+<style type="text/css">
+h1{font-size: 3em; }
+p{color: blue;}
+p.flip,.panel{
+    width: 30em;
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;
+    border: 0.1em solid gray;
+    background-color: #c0c0c0;
+    font-size: 0.7em;
+}
+.panel{display: none;}
+#a,#b,#c{
+	width: 5em;
+	height: 5em;
+	line-height: 5em;
+	display: none;
+	border: 0.1em solid red;
+	margin-top: 0.3em;}
+
+</style>
+
+<body>
+<!-- 	 <h1>where do you want to go?</h1>
+	 <p>Plan your next adcenture</p>
+	 <ul id="a">
+	 	<li class="b">Rome</li>
+	 	<li>paris</li>
+	 	<li >Rio</li>
+	 </ul>
+
+
+      测试 
+	<h2>This is a heading</h2>
+	<p class="a">This is a paragraph.</p>
+	<p >This is another paragraph.</p>
+	<button class="b" type="button">Click me</button>
+	<button class="c" type="button">Click me</button>
+
+	隐藏/显示面板 
+	<div>
+		<h2>效果演示</h2>
+		<p class="flip">点击这里，隐藏/显示面板</p>
+		<div class="panel">
+			<p>一寸光阴一寸金</p>
+			<p>我今天花了多少金子啊！！！</p>
+		</div>
+	</div> -->
+<p id="aa">点我啊，</p>
+	
+	<div id="a" style="background-color:red;"></div>
+	<div id="b" style="background-color:#00ff00;"></div>
+	<div id="c" style="background-color:#0000ff;"></div>
+
+</html>
